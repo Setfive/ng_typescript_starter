@@ -1,0 +1,15 @@
+{
+  "name": "ts_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tsify": "^1.0.8",
+    "typescript": "^2.0.3"
+  }
+}

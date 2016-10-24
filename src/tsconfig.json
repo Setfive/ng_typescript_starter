@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true
+  },
+  "exclude": [
+    "node_modules/angular-ui-router/src/"
+  ]
+}
+
+
