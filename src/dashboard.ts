@@ -36,9 +36,13 @@ export default function() {
 
 }
 
+interface IPhotoUpdate {
+    (image: IPhoto) : void;
+}
+
 class PhotoService {
     private selectedPhotos : IPhoto[];
-    private notifyOnUpdate : Function[];
+    private notifyOnUpdate : IPhotoUpdate[];
 
     constructor(){
         this.selectedPhotos = [];
@@ -59,7 +63,7 @@ class PhotoService {
         return this.selectedPhotos;
     }
 
-    public registerOnUpdate(fn: Function) : void{
+    public registerOnUpdate(fn: IPhotoUpdate) : void{
         this.notifyOnUpdate.push(fn);
     }
 
